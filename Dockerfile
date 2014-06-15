@@ -14,8 +14,8 @@ RUN apt-get -q update
 RUN apt-get install -qy git-core python2.7
 RUN git clone https://github.com/rembo10/headphones.git /headphones
 
-ADD start.sh /start.sR
-UN chmod u+x  /start.shh
+ADD start.sh /start.sh
+RUN chmod u+x  /start.sh
 
 
 VOLUME ["/data"]
