@@ -22,7 +22,6 @@ VOLUME /data
 VOLUME /torrents
 VOLUME /downloads
 VOLUME /music
-VOLUME /share
 
 EXPOSE 8181
 
