@@ -23,4 +23,5 @@ VOLUME /music
 ____________
 
 
-docker run -d -h your_host_name -v /your_music_location:/music -v /your_downloads_location:/downloads -v /your_torrents_location:/torrents -v /your_data_location:/data -p 8181:8181 headphones
+docker run -d -h hostname -v /hostdata:/data -v /hosttorrents:/torrents -v /hostdownloads:/downloads -v /hostmusiclibrary:/music -p 8181:8181 headphones
+
