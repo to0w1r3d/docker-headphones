@@ -18,13 +18,12 @@ ADD start.sh /start.sh
 RUN chmod u+x  /start.sh
 
 
-VOLUME ["/data"]
-# Torrent watch directory
-VOLUME ["/torrents"]
-# Incoming downloads
-VOLUME ["/downloads"]
-# Music library
-VOLUME ["/music"]
+VOLUME /data
+VOLUME /torrents
+VOLUME /downloads
+VOLUME /music
+VOLUME /share
+
 EXPOSE 8181
 
 CMD ["/start.sh"]
